@@ -40,11 +40,15 @@ export default class Login extends Component {
 				loginSuccess: false
 			});
 		}
-		else
+		else{
 			this.setState({
 				loginSuccess: true,
 				error: false
 			});
+			this.props.history.push("/home");
+
+		}
+
 	}
 
 	render() {
